@@ -1,88 +1,177 @@
-<!-- RIZKI PUTUWARU-->
-<!-- COPYRIGHT - 2021 -->
-<!-- HARGAI SAYA! JANGAN HAPUS COPYRIGHT -->
-<!-- MENGHAPUS COPYRIGHT = DOSA! -->
-<!-- SC DIBELI BUKAN DICURI! -->
-<!DOCTYPE html>
-<html>
-  <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!doctype html>
+<html lang="en">
+    <head>
+    	<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Starblood.Store</title>
+        
+        </head>
     
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-    <meta property="og:description" content="Website resmi RIZKI HOSTING">
-    <meta property="og:image" content="img/welcome.png">
-    <link rel="shorcut icon" href="img/icon.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/blink.js"></script>
-    <title>RIZKI HOSTING</title>
-    <script src='js/snowstorm.js' type='text/javascript'></script>
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-  </head>
-  <body oncontextmenu='return false;'>
-  <div id='menu'>
-    <form action='./login.html' method='POST'>
-        <style>
-      h1 {
-    color: #19abff;
-    font-size: 40px;
-    margin: 1px auto;
-    text-align:center;
-    text-transform:uppercase;
-        }
-    .neon {
-    color: #FF0000;
-    text-shadow: 0 0 5px #19abff, 0 0 10px #19abff, 0 0 20px #19abff, 0 0 45px #19abff, 0 0 40px #19abff;
-    }
+    <body>
+    	
+<section class="news section-padding" id="order">
+                        <style>
+                        	
+      	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+	outline:none;
+	margin:0;
+	padding:0;
+}
+.whatsapp-btn {
+	cursor:pointer;
+	position:fixed;
+	bottom:90px;
+	right:90px;
+	display:block;
+	width:90px;
+	height:90px;
+	border-radius:90px;
+	text-indent:-9999px;
+	background:#fff url(https://lh3.googleusercontent.com/-evFtor-f_w8/W4pfajfP17I/AAAAAAAAE9E/f7H52hrT5UoY4ZqdkxSGh2ZftYrH8fiDwCLcBGAs/s300/Whatsapp.png) no-repeat center center;
+	background-size:50% auto;
+	box-shadow:0 20px 25px rgba(0,0,0,.05);
+	transition:.2s;
+}
+.whatsapp-btn:active {
+	bottom:35px;
+}
+#whatsapp {
+	position:fixed;
+	z-index:+100;
+	bottom:0px;
+	right:0px;
+	display:block;
+	background:#fff;
+	box-shadow:0 20px 25px rgba(000);
+	max-width:-webkit-fill-available;
+	font-family:Helvetica, sans-serif;
+	font-size:90%;
+	border-radius:4px;
+	visibility:hidden;
+	opacity:0;
+	transition:.3s;
+}
+#whatsapp.toggle {
+    font-size: 100%;
+    padding: 1px;
+    position: relative;
+    visibility: initial;
+    opacity: unset;
+}
+@media(max-width:320px) {
+	.whatsapp-btn {
+		bottom:10px;
+		right:10px;
+	}
+	#whatsapp.toggle {
+		bottom:80px;
+		right:10px;
+		visibility:visible;
+		opacity:1;
+	}
+}
+#whatsapp label,
+#whatsapp a {
+	display:block;
+	margin:15px;
+	text-decoration:none;
+}
+#whatsapp input,
+#whatsapp textarea {
+	display:block;
+	border:1px solid #21811a;
+	box-shadow:inset 0 2px 5px #ffffff00;
+	width:100%;
+	padding:15px;
+	border-radius:2px;
+}
+#whatsapp input.nama {
+	text-transform:capitalize;
+}
+#whatsapp input:focus,
+#whatsapp textarea:focus {
+	border:1px solid #ddd;
+}
+#whatsapp textarea {
+	min-height:80px;
+	resize: none;
+}
+#whatsapp a {
+	cursor:pointer;
+	display:block;
+	padding:10px;
+	font-weight:bold;
+	text-align:center;
+	background:#25D366;
+	color:dark;
+	border-radius:2px;
+}
+#whatsapp a:hover {
+	background:#20b558;
+            }
     </style>
-    <script language="JavaScript1.2">
-function ClearError() {return true;}
-window.onerror = ClearError;
-</script>
-<script>
-window.onload = function() {
-var h1 = document.getElementsByTagName("h1")[0],
-text = h1.innerText || h1.textContent,
-split = [], i, lit = 0, timer = null;
-for(i = 0; i < text.length; ++i) {
-split.push("<span>" + text[i] + "</span>");
-}
-h1.innerHTML = split.join("");
-split = h1.childNodes;
+    
+     <p><b>   Order disini</b><p/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<div id="whatsapp" class="toggle">
 
-var flicker = function() {
-lit += 0.01;
-if(lit >= 1) {
-clearInterval(timer);
-}
-for(i = 0; i < split.length; ++i) {
-if(Math.random() < lit) {
-split[i].className = "neon";
-} else {
-split[i].className = "";
-}
-}
-}
-setInterval(flicker, 100);
+<input class="tujuan" type="hidden" value="81313994677" /> <!-- No. WhatsApp -->
+
+<label>Jumlah order / paket :
+<textarea class="pesan" placeholder="contoh: YouTube Premium 1 Tahun.."></textarea>
+</label>
+<a class="submit">Convert</a>
+
+</div>
+
+    <script>
+ $('.whatsapp-btn').click(function(){
+	$('#whatsapp').toggleClass('toggle');
+});
+// Onclick Whatsapp Sent!
+$('#whatsapp .submit').click(WhatsApp);
+
+$("#whatsapp input, #whatsapp textarea").keypress(function() {
+	if (event.which == 13) WhatsApp();
+});
+var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+function WhatsApp() {
+	var ph = '';
+	if ($('#whatsapp .pesan').val() == '') { // Cek Pesan
+		ph = $('#whatsapp .pesan').attr('placeholder');
+		alert('Silahkan tulis ' + ph);
+		$('#whatsapp .pesan').focus();
+		return false;
+	} else {
+		
+			// Check Device (Mobile/Desktop)
+			var url_wa = 'https://web.whatsapp.com/send';
+			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+				url_wa = 'whatsapp://send/';
+			}
+			// Get Value
+			var tujuan = $('#whatsapp .tujuan').val(),
+					via_url = location.href,
+					pesan = $('#whatsapp .pesan').val();
+			$(this).attr('href', url_wa + '?phone=62 ' + tujuan + '&text=!ytmp3 ' + pesan + ');
+			var w = 960,
+					h = 540,
+					left = Number((screen.width / 2) - (w / 2)),
+					tops = Number((screen.height / 2) - (h / 2)),
+					
+			return false;
+		}
+	}
 }
 </script>
-<br><br>
-<h1 class='txt animated lightSpeedIn'>RIZKI HOSTING</h1>
-      <img class='img animated flipInX' src='img/welcome.png'><br>
-      <div class='txt2 animated lightSpeedIn'>Selamat datang di website resmi<br>~ RIZKI HOSTING ~<br>Semua kebutuhan anda yang berhubungan dengan server sudah tersedia di sini jika mau order chat lewat wa.</div>
-      <a href="https://wa.me/+6281215992394?text=Assalamualikum%20Bang%20Saya%20Mau%20Order" target="_blank">
-	 <img src="https://i.ibb.co/N9P0K9H/239px-Whats-App-svg.png" width="50" height="50"/>
-</a>
-      <button class='btn animated flipInX' name='menu'>&nbsp;&nbsp; MASUK <i class='fa fa-angle-double-right'></i></button><br/>
-      <style type="text/css">
-  #highlight{font:bold 12px Impact,Arial,Sans-Serif;}
-    </style>
 
-    </form>
-  </div>
     </body>
 </html>
